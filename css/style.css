@@ -1,23 +1,100 @@
-body {
-  background pink;
-}
+<!DOCTYPE html>
+<html>
+<head>
+  <title>My Web Page</title>
+  <style>
+    /* Center the #details section horizontally */
+    #details {
+      width: 100%;
+      text-align: center;
+    }
+    #details div {
+      display: inline-block;
+      margin: 20px;
+    }
 
-h1 {
-  color: blue;
-  fontsize: 3em; 
-}
+    /* Float the #featured-property divs to the left */
+    #featured-property div {
+      float: left;
+      width: 33.33%;
+      padding: 20px;
+      box-sizing: border-box;
+    }
 
-h2 {
-  color: green;
-  font-weight: normal
-  font-style: italic;
-}
+    /* Center the text inside the #featured-property <p> elements */
+    #featured-property p {
+      width: 800px;
+      margin: 20px auto;
+      padding: 10px;
+      text-align: center;
+    }
 
-.completed {
-  font-family: 12px;
-}
-
-#tasks .completed {
-  backgound: #ccc;
-  text-decoration: underline;
-}
+    /* Other styles */
+    body {
+      background-color: pink;
+      font-family: Arial, sans-serif;
+      margin: 0;
+    }
+    h1 {
+      color: blue;
+      font-size: 3em;
+      margin-top: 0;
+    }
+    h2 {
+      color: green;
+      font-weight: normal;
+      font-style: italic;
+      margin-top: 0;
+    }
+    .completed {
+      font-size: 12px;
+      font-style: italic;
+      text-decoration: line-through;
+    }
+    #tasks .completed {
+      background-color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Web Page</h1>
+    <nav>
+      <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+  <main>
+    <section id="featured-property">
+      <div>
+        <img src="https://placekitten.com/900/600" alt="Featured property">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium velit at risus viverra, ac consequat tellus porttitor. In scelerisque sapien sit amet libero sagittis.</p>
+      </div>
+      <div>
+        <img src="https://placekitten.com/900/600" alt="Featured property">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium velit at risus viverra, ac consequat tellus porttitor. In scelerisque sapien sit amet libero sagittis.</p>
+      </div>
+      <div>
+        <img src="https://placekitten.com/900/600" alt="Featured property">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut pretium velit at risus viverra, ac consequat tellus porttitor. In scelerisque sapien sit amet libero sagittis.</p>
+      </div>
+    </section>
+    <section id="tasks">
+      <h2>Tasks</h2>
+      <ul>
+        <li class="completed">Buy groceries</li>
+        <li>Do laundry</li>
+        <li>Pay bills</li>
+        <li class="completed">Clean the house</li>
+        <li>Take out the trash</li>
+      </ul>
+    </section>
+  </main>
+  <footer>
+    <section id="details">
+      <div>
+        <h3>Contact</h3>
+        <p>Email: info
